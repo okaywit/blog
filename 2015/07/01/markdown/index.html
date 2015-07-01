@@ -3,15 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | Hexo</title>
+  <title>markdown语法详解 | Hexo</title>
   <meta name="author" content="Wang Hui">
   
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in ">
+  <meta name="description" content="标题一级标题 #内容二级标题 ##内容三级标题 ###内容四级标题 ####内容五级标题 #####内容六级标题 ######内容链接eg:    首页
+code: [首页](http://www.okaywit.com/ &amp;quot;okaywit&amp;quot;)
+eg: http://www.ok">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Hello World"/>
+  <meta property="og:title" content="markdown语法详解"/>
   <meta property="og:site_name" content="Hexo"/>
 
   
@@ -45,7 +47,7 @@
   <div class="container" id="container">
 	<div class="content">
 	  <div class="page-header">		
-  <h1><a class="brand" href="/">Hexo</a><span class="split"></span><span class="title">Hello World</span><span class="date" id="title-date"><i class="fa fa-clock-o"></i> 2015-07-01</span></h1>
+  <h1><a class="brand" href="/">Hexo</a><span class="split"></span><span class="title">markdown语法详解</span><span class="date" id="title-date"><i class="fa fa-clock-o"></i> 2015-07-01</span></h1>
 </div>		
 
 <div class="row page">
@@ -58,15 +60,41 @@
 	  
 
 	  <!-- content -->
-	  <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+	  <h3 id="标题"><em>标题</em></h3><h1 id="一级标题_#内容">一级标题 <code>#内容</code></h1><h2 id="二级标题_##内容">二级标题 <code>##内容</code></h2><h3 id="三级标题_###内容">三级标题 <code>###内容</code></h3><h4 id="四级标题_####内容">四级标题 <code>####内容</code></h4><h5 id="五级标题_#####内容">五级标题 <code>#####内容</code></h5><h6 id="六级标题_######内容">六级标题 <code>######内容</code></h6><h3 id="链接"><em>链接</em></h3><p>eg:    <a href="http://www.okaywit.com/" title="okaywit">首页</a></p>
+<p>code: <code>[首页](http://www.okaywit.com/ &quot;okaywit&quot;)</code></p>
+<p>eg: <a href="http://www.okaywit.com/">http://www.okaywit.com/</a></p>
+<p>code: <code>&lt;http://www.okaywit.com/&gt;</code></p>
+<h3 id="强调"><em>强调</em></h3><p>eg: <em>斜体</em></p>
+<p>code: <code>*内容*</code> 或 <code>_内容_</code></p>
+<p>eg: <strong>加粗</strong></p>
+<p>code: <code>**内容**</code> 或 <code>__内容__</code></p>
+<h3 id="代码"><em>代码</em></h3><p>eg: <code>代码</code></p>
+<p>code: <code>`代码` </code> </p>
+<h3 id="引用"><em>引用</em></h3><p>eg:</p>
+<blockquote>
+<p>应用区域</p>
+</blockquote>
+<p>code: <code>&gt;内容</code></p>
+<h3 id="无序列表"><em>无序列表</em></h3><p>eg:</p>
+<ul>
+<li>a</li>
+</ul>
+<ul>
+<li>b</li>
+</ul>
+<ul>
+<li>c</li>
+</ul>
+<p>code: <code>* 内容</code> 或 <code>+ 内容</code> 或 <code>-内容</code></p>
+<h3 id="有序列表"><em>有序列表</em></h3><p>eg: </p>
+<ol>
+<li>a</li>
+<li>b</li>
+</ol>
+<p>code: <code>数字. 内容</code></p>
+<h3 id="下划线"><em>下划线</em></h3><p>eg: </p>
+<hr>
+<p>code: <code>***</code> 或 <code>---</code> 或 <code>____</code></p>
 	  
 
 	  <div>
@@ -83,12 +111,16 @@
 			
 		
 	
+		
+			
+			
+			
 	
 		<li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>prev</a></li>
 	
 	<li><a href="/"><i class="fa fa-archive"></i>Home</a></li>
 	
-		<li class="next disabled"><a>next<i class="fa fa-arrow-circle-o-right"></i></a></li>
+		<li class="next"><a href="/2015/06/30/linux-common-commands/" class="alignright next">next<i class="fa fa-arrow-circle-o-right"></i></a></li>
 	
 </ul>
 </div>
