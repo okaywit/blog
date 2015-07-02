@@ -63,7 +63,9 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: landscape
+theme: jacman
+styleus: 
+  compress: true
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
@@ -73,3 +75,8 @@ deploy:
   branch: gh-pages
 
 disqus_shortname: bighui
+
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
