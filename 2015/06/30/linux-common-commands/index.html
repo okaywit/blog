@@ -11,16 +11,16 @@
     
 
     
-    <meta name="description" content="日常使用的高频率linux命令汇总">
+    <meta name="description" content="日常使用的高频率linux命令汇总，例如：rm、tar、find、ps、unzip等。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux常用命令">
 <meta property="og:url" content="http://www.okaywit.com/2015/06/30/linux-common-commands/index.html">
 <meta property="og:site_name" content="大辉Face">
-<meta property="og:description" content="日常使用的高频率linux命令汇总">
-<meta property="og:updated_time" content="2015-07-02T03:39:21.321Z">
+<meta property="og:description" content="日常使用的高频率linux命令汇总，例如：rm、tar、find、ps、unzip等。">
+<meta property="og:updated_time" content="2015-07-02T10:22:02.630Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux常用命令">
-<meta name="twitter:description" content="日常使用的高频率linux命令汇总">
+<meta name="twitter:description" content="日常使用的高频率linux命令汇总，例如：rm、tar、find、ps、unzip等。">
 
     
     <link rel="alternative" href="/atom.xml" title="大辉Face" type="application/atom+xml">
@@ -91,15 +91,20 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#rm"><span class="toc-number">1.</span> <span class="toc-text">rm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tar"><span class="toc-number">2.</span> <span class="toc-text">tar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#find"><span class="toc-number">3.</span> <span class="toc-text">find</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#rm"><span class="toc-number">1.</span> <span class="toc-text">rm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tar"><span class="toc-number">2.</span> <span class="toc-text">tar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#find"><span class="toc-number">3.</span> <span class="toc-text">find</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#unzip"><span class="toc-number">4.</span> <span class="toc-text">unzip</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#netstat"><span class="toc-number">5.</span> <span class="toc-text">netstat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#su"><span class="toc-number">6.</span> <span class="toc-text">su</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ps"><span class="toc-number">7.</span> <span class="toc-text">ps</span></a></li></ol>
 		
 		</div>
 		
-		<p>日常使用的高频率linux命令汇总<br><a id="more"></a></p>
+		<p>日常使用的高频率linux命令汇总，例如：rm、tar、find、ps、unzip等。<br><a id="more"></a></p>
 <h3 id="rm">rm</h3><pre><code>删除目录：rm -r 目录 (-<span class="string">r:</span>递归删除该目录下文件，-<span class="string">f:</span>强制删除)
 </code></pre><h3 id="tar">tar</h3><pre><code><span class="tag">tar</span><span class="class">.gz</span>文件：<span class="tag">tar</span> <span class="tag">-xzf</span> 文件名
 </code></pre><h3 id="find">find</h3><pre><code>查找目录： <span class="keyword">find</span> /范围 -name <span class="string">'关键字'</span> -<span class="built_in">type</span> <span class="keyword">d</span>
 查找文件： <span class="keyword">find</span> /范围 -name <span class="string">'关键字'</span> -<span class="keyword">print</span>
+</code></pre><h3 id="unzip">unzip</h3><pre><code>解压到指定目录： unzip <span class="keyword">zip</span>文件 -<span class="keyword">d</span> 目录
+</code></pre><h3 id="netstat">netstat</h3><pre><code>显示TCP端口：netstat -tanp
+显示UDP端口：netstat -uanp
+</code></pre><h3 id="su">su</h3><pre><code>用户切换：<span class="keyword">su</span> 用户名
+</code></pre><h3 id="ps">ps</h3><pre><code>查看进程：<span class="keyword">ps</span> -ef | <span class="keyword">grep</span> 进程名
 </code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
@@ -160,7 +165,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#rm"><span class="toc-number">1.</span> <span class="toc-text">rm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tar"><span class="toc-number">2.</span> <span class="toc-text">tar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#find"><span class="toc-number">3.</span> <span class="toc-text">find</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#rm"><span class="toc-number">1.</span> <span class="toc-text">rm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tar"><span class="toc-number">2.</span> <span class="toc-text">tar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#find"><span class="toc-number">3.</span> <span class="toc-text">find</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#unzip"><span class="toc-number">4.</span> <span class="toc-text">unzip</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#netstat"><span class="toc-number">5.</span> <span class="toc-text">netstat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#su"><span class="toc-number">6.</span> <span class="toc-text">su</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ps"><span class="toc-number">7.</span> <span class="toc-text">ps</span></a></li></ol>
  
   </div>
 
