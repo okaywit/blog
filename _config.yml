@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 大辉Face
-subtitle:
-description: 
+title: "大辉Face"
+subtitle: "a"
+description: b 
 author: Wang Hui
-language: zh_CN
+language: zh-CN
 timezone:
 
 # URL
