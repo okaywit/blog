@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  
+  <title><![CDATA[大辉Face]]></title>
+  
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://www.okaywit.com//"/>
+  <updated>2015-07-02T03:42:51.637Z</updated>
+  <id>http://www.okaywit.com//</id>
+  
+  <author>
+    <name><![CDATA[Wang Hui]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[markdown语法详解]]></title>
+    <link href="http://www.okaywit.com/2015/07/01/markdown/"/>
+    <id>http://www.okaywit.com/2015/07/01/markdown/</id>
+    <published>2015-07-01T21:47:30.000Z</published>
+    <updated>2015-07-02T03:42:51.637Z</updated>
+    <content type="html"><![CDATA[<p>markdown常用语法解释说明，标题、链接、强调.<br><a id="more"></a></p>
+<h3 id="标题"><em>标题</em></h3><h1 id="一级标题_#内容">一级标题 <code>#内容</code></h1><h2 id="二级标题_##内容">二级标题 <code>##内容</code></h2><h3 id="三级标题_###内容">三级标题 <code>###内容</code></h3><h4 id="四级标题_####内容">四级标题 <code>####内容</code></h4><h5 id="五级标题_#####内容">五级标题 <code>#####内容</code></h5><h6 id="六级标题_######内容">六级标题 <code>######内容</code></h6><h3 id="链接"><em>链接</em></h3><p>eg:    <a href="http://www.okaywit.com/" title="okaywit">首页</a></p>
+<p>code: <code>[首页](http://www.okaywit.com/ &quot;okaywit&quot;)</code></p>
+<p>eg: <a href="http://www.okaywit.com/">http://www.okaywit.com/</a></p>
+<p>code: <code>&lt;http://www.okaywit.com/&gt;</code></p>
+<h3 id="强调"><em>强调</em></h3><p>eg: <em>斜体</em></p>
+<p>code: <code>*内容*</code> 或 <code>_内容_</code></p>
+<p>eg: <strong>加粗</strong></p>
+<p>code: <code>**内容**</code> 或 <code>__内容__</code></p>
+<h3 id="代码"><em>代码</em></h3><p>eg: <code>代码</code></p>
+<p>code: <code>`代码` </code> </p>
+<h3 id="引用"><em>引用</em></h3><p>eg:</p>
+<blockquote>
+<p>应用区域</p>
+</blockquote>
+<p>code: <code>&gt;内容</code></p>
+<h3 id="无序列表"><em>无序列表</em></h3><p>eg:</p>
+<ul>
+<li>a</li>
+</ul>
+<ul>
+<li>b</li>
+</ul>
+<ul>
+<li>c</li>
+</ul>
+<p>code: <code>* 内容</code> 或 <code>+ 内容</code> 或 <code>-内容</code></p>
+<h3 id="有序列表"><em>有序列表</em></h3><p>eg: </p>
+<ol>
+<li>a</li>
+<li>b</li>
+</ol>
+<p>code: <code>数字. 内容</code></p>
+<h3 id="下划线"><em>下划线</em></h3><p>eg: </p>
+<hr>
+<p>code: <code>***</code> 或 <code>---</code> 或 <code>____</code></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>markdown常用语法解释说明，标题、链接、强调.<br>]]>
+    
+    </summary>
+    
+      <category term="markdown" scheme="http://www.okaywit.com/tags/markdown/"/>
+    
+      <category term="日常笔记" scheme="http://www.okaywit.com/categories/%E6%97%A5%E5%B8%B8%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[linux常用命令]]></title>
+    <link href="http://www.okaywit.com/2015/06/30/linux-common-commands/"/>
+    <id>http://www.okaywit.com/2015/06/30/linux-common-commands/</id>
+    <published>2015-07-01T04:10:37.000Z</published>
+    <updated>2015-07-02T03:39:21.321Z</updated>
+    <content type="html"><![CDATA[<p>日常使用的高频率linux命令汇总<br><a id="more"></a></p>
+<h3 id="rm">rm</h3><pre><code>删除目录：rm -r 目录 (-<span class="string">r:</span>递归删除该目录下文件，-<span class="string">f:</span>强制删除)
+</code></pre><h3 id="tar">tar</h3><pre><code><span class="tag">tar</span><span class="class">.gz</span>文件：<span class="tag">tar</span> <span class="tag">-xzf</span> 文件名
+</code></pre><h3 id="find">find</h3><pre><code>查找目录： <span class="keyword">find</span> /范围 -name <span class="string">'关键字'</span> -<span class="built_in">type</span> <span class="keyword">d</span>
+查找文件： <span class="keyword">find</span> /范围 -name <span class="string">'关键字'</span> -<span class="keyword">print</span>
+</code></pre>]]></content>
+    <summary type="html">
+    <![CDATA[<p>日常使用的高频率linux命令汇总<br>]]>
+    
+    </summary>
+    
+      <category term="linux" scheme="http://www.okaywit.com/tags/linux/"/>
+    
+      <category term="日常笔记" scheme="http://www.okaywit.com/categories/%E6%97%A5%E5%B8%B8%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+</feed>
