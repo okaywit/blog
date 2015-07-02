@@ -11,6 +11,7 @@
       </header>
     <% } %>
     <div class="article-entry" itemprop="articleBody">
+      <%- post.excerpt %> <%- index %><%- theme.excerpt_link %>
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
         <% if (theme.excerpt_link){ %>
@@ -24,8 +25,7 @@
     </div>
     <footer class="article-footer">
       <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-     	<%- post.comments %> <%- config.disqus_shortname %>
-	<% if (post.comments && config.disqus_shortname){ %>
+	    <% if (post.comments && config.disqus_shortname){ %>
         <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
       <% } %>
       <%- partial('post/tag') %>
