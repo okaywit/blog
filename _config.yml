@@ -71,3 +71,5 @@ deploy:
   type: git
   repo: https://github.com/okaywit/blog
   branch: gh-pages
+
+disqus_shortname: bighui
