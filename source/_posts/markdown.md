@@ -1,9 +1,11 @@
 title: markdown语法详解
 date: 2015-07-01 14:47:30
-tags: 
+tags: markdown
 categories: 日常笔记
-excerpt: markdown常用语法解释说明，标题、链接、强调....
 ---
+
+markdown常用语法解释说明，标题、链接、强调.
+<!-- more -->
 
 ### *标题*
 
