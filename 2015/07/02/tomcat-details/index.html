@@ -4,23 +4,25 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>markdown语法详解 | 大辉Face</title>
+    <title>tomcat配置原理介绍 | 大辉Face</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Wang Hui">
     
 
     
-    <meta name="description" content="markdown常用语法解释说明，标题、链接、强调.">
+    <meta name="description" content="主要介绍一些tomcat日常配置相关的内容原理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="markdown语法详解">
-<meta property="og:url" content="http://www.okaywit.com/2015/07/01/markdown/index.html">
+<meta property="og:title" content="tomcat配置原理介绍">
+<meta property="og:url" content="http://www.okaywit.com/2015/07/02/tomcat-details/index.html">
 <meta property="og:site_name" content="大辉Face">
-<meta property="og:description" content="markdown常用语法解释说明，标题、链接、强调.">
-<meta property="og:updated_time" content="2015-07-02T03:42:51.637Z">
+<meta property="og:description" content="主要介绍一些tomcat日常配置相关的内容原理">
+<meta property="og:image" content="http://7xk4gy.com1.z0.glb.clouddn.com/okaywit_server.jpg">
+<meta property="og:image" content="http://7xk4gy.com1.z0.glb.clouddn.com/okaywit_server.jpg">
+<meta property="og:updated_time" content="2015-07-03T07:49:05.255Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="markdown语法详解">
-<meta name="twitter:description" content="markdown常用语法解释说明，标题、链接、强调.">
+<meta name="twitter:title" content="tomcat配置原理介绍">
+<meta name="twitter:description" content="主要介绍一些tomcat日常配置相关的内容原理">
 
     
     <link rel="alternative" href="/atom.xml" title="大辉Face" type="application/atom+xml">
@@ -75,14 +77,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/07/01/markdown/" title="markdown语法详解" itemprop="url">markdown语法详解</a>
+      <a href="/2015/07/02/tomcat-details/" title="tomcat配置原理介绍" itemprop="url">tomcat配置原理介绍</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Wang Hui" target="_blank" itemprop="author">Wang Hui</a>
 		
   <p class="article-time">
-    <time datetime="2015-07-01T21:47:30.000Z" itemprop="datePublished"> 发表于 2015-07-01</time>
+    <time datetime="2015-07-03T01:48:12.000Z" itemprop="datePublished"> 发表于 2015-07-02</time>
     
   </p>
 </header>
@@ -91,46 +93,27 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#标题"><span class="toc-number">1.</span> <span class="toc-text">标题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一级标题_#内容"><span class="toc-number"></span> <span class="toc-text">一级标题 #内容</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#二级标题_##内容"><span class="toc-number"></span> <span class="toc-text">二级标题 ##内容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#三级标题_###内容"><span class="toc-number">1.</span> <span class="toc-text">三级标题 ###内容</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#四级标题_####内容"><span class="toc-number">1.1.</span> <span class="toc-text">四级标题 ####内容</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#五级标题_#####内容"><span class="toc-number">1.1.1.</span> <span class="toc-text">五级标题 #####内容</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#六级标题_######内容"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">六级标题 ######内容</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#链接"><span class="toc-number">2.</span> <span class="toc-text">链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#强调"><span class="toc-number">3.</span> <span class="toc-text">强调</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码"><span class="toc-number">4.</span> <span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#引用"><span class="toc-number">5.</span> <span class="toc-text">引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#无序列表"><span class="toc-number">6.</span> <span class="toc-text">无序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有序列表"><span class="toc-number">7.</span> <span class="toc-text">有序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#下划线"><span class="toc-number">8.</span> <span class="toc-text">下划线</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#目录介绍"><span class="toc-number">1.</span> <span class="toc-text">目录介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#catalina-home"><span class="toc-number">2.</span> <span class="toc-text">catalina.home</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#catalina-base"><span class="toc-number">3.</span> <span class="toc-text">catalina.base</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#server-xml说明"><span class="toc-number">4.</span> <span class="toc-text">server.xml说明</span></a></li></ol>
 		
 		</div>
 		
-		<p>markdown常用语法解释说明，标题、链接、强调.<br><a id="more"></a></p>
-<h3 id="标题"><em>标题</em></h3><h1 id="一级标题_#内容">一级标题 <code>#内容</code></h1><h2 id="二级标题_##内容">二级标题 <code>##内容</code></h2><h3 id="三级标题_###内容">三级标题 <code>###内容</code></h3><h4 id="四级标题_####内容">四级标题 <code>####内容</code></h4><h5 id="五级标题_#####内容">五级标题 <code>#####内容</code></h5><h6 id="六级标题_######内容">六级标题 <code>######内容</code></h6><h3 id="链接"><em>链接</em></h3><p>eg:    <a href="http://www.okaywit.com/" title="okaywit">首页</a></p>
-<p>code: <code>[首页](http://www.okaywit.com/ &quot;okaywit&quot;)</code></p>
-<p>eg: <a href="http://www.okaywit.com/">http://www.okaywit.com/</a></p>
-<p>code: <code>&lt;http://www.okaywit.com/&gt;</code></p>
-<h3 id="强调"><em>强调</em></h3><p>eg: <em>斜体</em></p>
-<p>code: <code>*内容*</code> 或 <code>_内容_</code></p>
-<p>eg: <strong>加粗</strong></p>
-<p>code: <code>**内容**</code> 或 <code>__内容__</code></p>
-<h3 id="代码"><em>代码</em></h3><p>eg: <code>代码</code></p>
-<p>code: <code>`代码` </code> </p>
-<h3 id="引用"><em>引用</em></h3><p>eg:</p>
-<blockquote>
-<p>应用区域</p>
-</blockquote>
-<p>code: <code>&gt;内容</code></p>
-<h3 id="无序列表"><em>无序列表</em></h3><p>eg:</p>
-<ul>
-<li>a</li>
+		<p>主要介绍一些tomcat日常配置相关的内容原理<br><img src="http://7xk4gy.com1.z0.glb.clouddn.com/okaywit_server.jpg"></p>
+<a id="more"></a>
+<h3 id="目录介绍">目录介绍</h3><ul>
+<li>bin 脚本</li>
+<li>conf 配置文件 </li>
+<li>logs 日志</li>
+<li>webapps 应用</li>
 </ul>
-<ul>
-<li>b</li>
-</ul>
-<ul>
-<li>c</li>
-</ul>
-<p>code: <code>* 内容</code> 或 <code>+ 内容</code> 或 <code>-内容</code></p>
-<h3 id="有序列表"><em>有序列表</em></h3><p>eg: </p>
-<ol>
-<li>a</li>
-<li>b</li>
+<h3 id="catalina-home">catalina.home</h3><pre><code>对应系统变量配置中的CATALIN<span class="built_in">A_HOME</span>，指定bin、lib目录位置。
+</code></pre><h3 id="catalina-base">catalina.base</h3><pre><code>对应系统变量配置中的CATALIN<span class="built_in">A_BASE</span>，指定conf、logs、temp、webapps、work目录位置。
+</code></pre><h3 id="server-xml说明">server.xml说明</h3><ol>
+<li><p>tomcat的核心配置文件，对外提供web服务。</p>
+</li>
+<li><p>Service表示提供具体服务内容，Connector配置提供服务的监听端口；<br> Engine表示提供服务的引擎，Host表示访问的资源位置，Context表示设定访问的url。</p>
+</li>
 </ol>
-<p>code: <code>数字. 内容</code></p>
-<h3 id="下划线"><em>下划线</em></h3><p>eg: </p>
-<hr>
-<p>code: <code>***</code> 或 <code>---</code> 或 <code>____</code></p>
+<p>Server结构图如下：<br><img src="http://7xk4gy.com1.z0.glb.clouddn.com/okaywit_server.jpg"></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -138,13 +121,13 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/日常笔记/">日常笔记</a>
+  <a class="article-category-link" href="/categories/tomcat/">tomcat</a>
 </div>
 
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/markdown/">markdown</a>
+  <span></span> <a href="/tags/tomcat/">tomcat</a>
   </div>
 
 </div>
@@ -153,7 +136,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://www.okaywit.com/2015/07/01/markdown/" data-title="markdown语法详解 | 大辉Face" data-tsina="5547700992" class="share clearfix">
+	  <div data-url="http://www.okaywit.com/2015/07/02/tomcat-details/" data-title="tomcat配置原理介绍 | 大辉Face" data-tsina="5547700992" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -166,19 +149,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/07/02/tomcat-details/" title="tomcat配置原理介绍">
-  <strong>上一篇：</strong><br/>
-  <span>
-  tomcat配置原理介绍</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/06/30/websocket-demo-chat/"  title="websocket简单实例-聊天">
+<a href="/2015/07/01/markdown/"  title="markdown语法详解">
  <strong>下一篇：</strong><br/> 
- <span>websocket简单实例-聊天
+ <span>markdown语法详解
 </span>
 </a>
 </div>
@@ -199,7 +174,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#标题"><span class="toc-number">1.</span> <span class="toc-text">标题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一级标题_#内容"><span class="toc-number"></span> <span class="toc-text">一级标题 #内容</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#二级标题_##内容"><span class="toc-number"></span> <span class="toc-text">二级标题 ##内容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#三级标题_###内容"><span class="toc-number">1.</span> <span class="toc-text">三级标题 ###内容</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#四级标题_####内容"><span class="toc-number">1.1.</span> <span class="toc-text">四级标题 ####内容</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#五级标题_#####内容"><span class="toc-number">1.1.1.</span> <span class="toc-text">五级标题 #####内容</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#六级标题_######内容"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">六级标题 ######内容</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#链接"><span class="toc-number">2.</span> <span class="toc-text">链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#强调"><span class="toc-number">3.</span> <span class="toc-text">强调</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码"><span class="toc-number">4.</span> <span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#引用"><span class="toc-number">5.</span> <span class="toc-text">引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#无序列表"><span class="toc-number">6.</span> <span class="toc-text">无序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有序列表"><span class="toc-number">7.</span> <span class="toc-text">有序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#下划线"><span class="toc-number">8.</span> <span class="toc-text">下划线</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#目录介绍"><span class="toc-number">1.</span> <span class="toc-text">目录介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#catalina-home"><span class="toc-number">2.</span> <span class="toc-text">catalina.home</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#catalina-base"><span class="toc-number">3.</span> <span class="toc-text">catalina.base</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#server-xml说明"><span class="toc-number">4.</span> <span class="toc-text">server.xml说明</span></a></li></ol>
  
   </div>
 

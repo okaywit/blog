@@ -5,7 +5,7 @@
   <subtitle><![CDATA[我愿做一个孤独的行者，守护心中的那份宁静！]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.okaywit.com//"/>
-  <updated>2015-07-02T03:42:51.637Z</updated>
+  <updated>2015-07-03T07:49:05.255Z</updated>
   <id>http://www.okaywit.com//</id>
   
   <author>
@@ -14,6 +14,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[tomcat配置原理介绍]]></title>
+    <link href="http://www.okaywit.com/2015/07/02/tomcat-details/"/>
+    <id>http://www.okaywit.com/2015/07/02/tomcat-details/</id>
+    <published>2015-07-03T01:48:12.000Z</published>
+    <updated>2015-07-03T07:49:05.255Z</updated>
+    <content type="html"><![CDATA[<p>主要介绍一些tomcat日常配置相关的内容原理<br><img src="http://7xk4gy.com1.z0.glb.clouddn.com/okaywit_server.jpg"></p>
+<a id="more"></a>
+<h3 id="目录介绍">目录介绍</h3><ul>
+<li>bin 脚本</li>
+<li>conf 配置文件 </li>
+<li>logs 日志</li>
+<li>webapps 应用</li>
+</ul>
+<h3 id="catalina-home">catalina.home</h3><pre><code>对应系统变量配置中的CATALIN<span class="built_in">A_HOME</span>，指定bin、lib目录位置。
+</code></pre><h3 id="catalina-base">catalina.base</h3><pre><code>对应系统变量配置中的CATALIN<span class="built_in">A_BASE</span>，指定conf、logs、temp、webapps、work目录位置。
+</code></pre><h3 id="server-xml说明">server.xml说明</h3><ol>
+<li><p>tomcat的核心配置文件，对外提供web服务。</p>
+</li>
+<li><p>Service表示提供具体服务内容，Connector配置提供服务的监听端口；<br> Engine表示提供服务的引擎，Host表示访问的资源位置，Context表示设定访问的url。</p>
+</li>
+</ol>
+<p>Server结构图如下：<br><img src="http://7xk4gy.com1.z0.glb.clouddn.com/okaywit_server.jpg"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>主要介绍一些tomcat日常配置相关的内容原理<br><img src="http://7xk4gy.com1.z0.glb.clouddn.com/okaywit_server.jpg"></p>]]>
+    
+    </summary>
+    
+      <category term="tomcat" scheme="http://www.okaywit.com/tags/tomcat/"/>
+    
+      <category term="tomcat" scheme="http://www.okaywit.com/categories/tomcat/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[markdown语法详解]]></title>
