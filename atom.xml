@@ -70,34 +70,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[linux常用命令]]></title>
-    <link href="http://www.okaywit.com/2015/06/30/linux-common-commands/"/>
-    <id>http://www.okaywit.com/2015/06/30/linux-common-commands/</id>
-    <published>2015-07-01T04:10:37.000Z</published>
-    <updated>2015-07-02T10:22:02.630Z</updated>
-    <content type="html"><![CDATA[<p>日常使用的高频率linux命令汇总，例如：rm、tar、find、ps、unzip等。<br><a id="more"></a></p>
-<h3 id="rm">rm</h3><pre><code>删除目录：rm -r 目录 (-<span class="string">r:</span>递归删除该目录下文件，-<span class="string">f:</span>强制删除)
-</code></pre><h3 id="tar">tar</h3><pre><code><span class="tag">tar</span><span class="class">.gz</span>文件：<span class="tag">tar</span> <span class="tag">-xzf</span> 文件名
-</code></pre><h3 id="find">find</h3><pre><code>查找目录： <span class="keyword">find</span> /范围 -name <span class="string">'关键字'</span> -<span class="built_in">type</span> <span class="keyword">d</span>
-查找文件： <span class="keyword">find</span> /范围 -name <span class="string">'关键字'</span> -<span class="keyword">print</span>
-</code></pre><h3 id="unzip">unzip</h3><pre><code>解压到指定目录： unzip <span class="keyword">zip</span>文件 -<span class="keyword">d</span> 目录
-</code></pre><h3 id="netstat">netstat</h3><pre><code>显示TCP端口：netstat -tanp
-显示UDP端口：netstat -uanp
-</code></pre><h3 id="su">su</h3><pre><code>用户切换：<span class="keyword">su</span> 用户名
-</code></pre><h3 id="ps">ps</h3><pre><code>查看进程：<span class="keyword">ps</span> -ef | <span class="keyword">grep</span> 进程名
-</code></pre>]]></content>
-    <summary type="html">
-    <![CDATA[<p>日常使用的高频率linux命令汇总，例如：rm、tar、find、ps、unzip等。<br>]]>
-    
-    </summary>
-    
-      <category term="linux" scheme="http://www.okaywit.com/tags/linux/"/>
-    
-      <category term="日常笔记" scheme="http://www.okaywit.com/categories/%E6%97%A5%E5%B8%B8%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[websocket简单实例-聊天]]></title>
     <link href="http://www.okaywit.com/2015/06/30/websocket-demo-chat/"/>
     <id>http://www.okaywit.com/2015/06/30/websocket-demo-chat/</id>
@@ -297,6 +269,34 @@ public class ChatServer {
       <category term="websocket" scheme="http://www.okaywit.com/tags/websocket/"/>
     
       <category term="websocket" scheme="http://www.okaywit.com/categories/websocket/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[linux常用命令]]></title>
+    <link href="http://www.okaywit.com/2015/06/30/linux-common-commands/"/>
+    <id>http://www.okaywit.com/2015/06/30/linux-common-commands/</id>
+    <published>2015-07-01T04:10:37.000Z</published>
+    <updated>2015-07-02T10:22:02.630Z</updated>
+    <content type="html"><![CDATA[<p>日常使用的高频率linux命令汇总，例如：rm、tar、find、ps、unzip等。<br><a id="more"></a></p>
+<h3 id="rm">rm</h3><pre><code>删除目录：rm -r 目录 (-<span class="string">r:</span>递归删除该目录下文件，-<span class="string">f:</span>强制删除)
+</code></pre><h3 id="tar">tar</h3><pre><code><span class="tag">tar</span><span class="class">.gz</span>文件：<span class="tag">tar</span> <span class="tag">-xzf</span> 文件名
+</code></pre><h3 id="find">find</h3><pre><code>查找目录： <span class="keyword">find</span> /范围 -name <span class="string">'关键字'</span> -<span class="built_in">type</span> <span class="keyword">d</span>
+查找文件： <span class="keyword">find</span> /范围 -name <span class="string">'关键字'</span> -<span class="keyword">print</span>
+</code></pre><h3 id="unzip">unzip</h3><pre><code>解压到指定目录： unzip <span class="keyword">zip</span>文件 -<span class="keyword">d</span> 目录
+</code></pre><h3 id="netstat">netstat</h3><pre><code>显示TCP端口：netstat -tanp
+显示UDP端口：netstat -uanp
+</code></pre><h3 id="su">su</h3><pre><code>用户切换：<span class="keyword">su</span> 用户名
+</code></pre><h3 id="ps">ps</h3><pre><code>查看进程：<span class="keyword">ps</span> -ef | <span class="keyword">grep</span> 进程名
+</code></pre>]]></content>
+    <summary type="html">
+    <![CDATA[<p>日常使用的高频率linux命令汇总，例如：rm、tar、find、ps、unzip等。<br>]]>
+    
+    </summary>
+    
+      <category term="linux" scheme="http://www.okaywit.com/tags/linux/"/>
+    
+      <category term="日常笔记" scheme="http://www.okaywit.com/categories/%E6%97%A5%E5%B8%B8%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
